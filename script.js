@@ -31,6 +31,7 @@ function makeYellow() {
     trafLightRed.removeEventListener('click', makeYellow);
     trafLightYellow.removeEventListener('click', makeYellow);
     trafLightGreen.removeEventListener('click', makeYellow);
+    trafLightYellow.removeEventListener('click', makeRed);
 
     // Listener set
     trafLightRed.addEventListener('click', makeGreen);
@@ -48,6 +49,7 @@ function makeGreen() {
     trafLightRed.removeEventListener('click', makeGreen);
     trafLightYellow.removeEventListener('click', makeGreen);
     trafLightGreen.removeEventListener('click', makeGreen);
+    trafLightGreen.removeEventListener('click', makeRed);
 
     // Listener set
 
